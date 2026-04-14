@@ -1,4 +1,4 @@
-/queue simple remove [find name~"cust_"]
+:foreach i in=[/queue simple find name~"cust_"] do={ /queue simple remove $i }
 /queue simple add name="cust_KAMPLENG" target=30.30.30.180/32 max-limit=10M/10M
 /queue simple add name="cust_DINI" target=30.30.30.170/32 max-limit=20M/20M
 /queue simple add name="cust_CENAY " target=30.30.30.112/32 max-limit=3M/3M
@@ -34,7 +34,6 @@
 /queue simple add name="cust_RABBEL" target=30.30.30.151/32 max-limit=8M/8M
 /queue simple add name="cust_WAHYUNI" target=30.30.30.157/32 max-limit=3M/3M
 /queue simple add name="cust_PIPIT" target=30.30.30.183/32 max-limit=8M/8M
-/queue simple add name="cust_MBA SRI " target=30.30.30.184/32 max-limit=1M/512k
 /queue simple add name="cust_AMI" target=30.30.30.185/32 max-limit=8M/8M
 /queue simple add name="cust_RISNA" target=30.30.30.175/32 max-limit=8M/8M
 /queue simple add name="cust_NADYA" target=30.30.30.186/32 max-limit=10M/10M
