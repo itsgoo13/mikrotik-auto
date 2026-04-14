@@ -9,7 +9,7 @@
 /queue simple add name="cust_FAJAR " target=30.30.30.111/32 max-limit=10M/10M
 /queue simple add name="cust_JABLAY" target=30.30.30.120/32 max-limit=10M/10M
 /queue simple add name="cust_MANG RONI" target=30.30.30.104/32 max-limit=3M/3M
-/queue simple add name="cust_KA MIDAH" target=30.30.30.101/32 max-limit=20M/20M
+/queue simple add name="cust_KA MIDAH" target=30.30.30.101/32 max-limit=10M/10M
 /queue simple add name="cust_RIA" target=30.30.30.173/32 max-limit=10M/10M
 /queue simple add name="cust_DEA" target=30.30.30.242/32 max-limit=20M/20M
 /queue simple add name="cust_GANI" target=30.30.30.118/32 max-limit=20M/20M
