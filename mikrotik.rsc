@@ -24,7 +24,7 @@
 /queue simple set [find target~"30.30.30.222"] max-limit=3M/3M
 /queue simple set [find target~"30.30.30.230"] max-limit=5M/10M
 /queue simple set [find target~"30.30.30.231"] max-limit=5M/10M
-/queue simple set [find target~"30.30.30.232"] max-limit=8M/8M
+/queue simple set [find target~"30.30.30.232"] max-limit=1M/512k
 /queue simple set [find target~"30.30.30.252"] max-limit=3M/3M
 /queue simple set [find target~"30.30.30.150"] max-limit=8M/8M
 /queue simple set [find target~"30.30.30.137"] max-limit=3M/3M
@@ -33,7 +33,7 @@
 /queue simple set [find target~"30.30.30.151"] max-limit=8M/8M
 /queue simple set [find target~"30.30.30.157"] max-limit=3M/3M
 /queue simple set [find target~"30.30.30.183"] max-limit=8M/8M
-/queue simple set [find target~"30.30.30.184"] max-limit=0/0
+/queue simple set [find target~"30.30.30.184"] max-limit=1M/512k
 /queue simple set [find target~"30.30.30.185"] max-limit=8M/8M
 /queue simple set [find target~"30.30.30.175"] max-limit=8M/8M
 /queue simple set [find target~"30.30.30.186"] max-limit=10M/10M
