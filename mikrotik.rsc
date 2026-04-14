@@ -247,90 +247,91 @@
 
 :foreach i in=[/queue simple find where name~"cust_"] do={
   :local name [/queue simple get $i name];
+  :local keep false;
 
-  :if ($name="cust_KAMPLENG") do={ :set found true }
+  :if ($name="cust_KAMPLENG") do={ :set keep true }
 
-  :if ($name="cust_DINI") do={ :set found true }
+  :if ($name="cust_DINI") do={ :set keep true }
 
-  :if ($name="cust_CENAY ") do={ :set found true }
+  :if ($name="cust_CENAY ") do={ :set keep true }
 
-  :if ($name="cust_JIMI") do={ :set found true }
+  :if ($name="cust_JIMI") do={ :set keep true }
 
-  :if ($name="cust_ACUY") do={ :set found true }
+  :if ($name="cust_ACUY") do={ :set keep true }
 
-  :if ($name="cust_AZZAM") do={ :set found true }
+  :if ($name="cust_AZZAM") do={ :set keep true }
 
-  :if ($name="cust_ALFA") do={ :set found true }
+  :if ($name="cust_ALFA") do={ :set keep true }
 
-  :if ($name="cust_FAJAR ") do={ :set found true }
+  :if ($name="cust_FAJAR ") do={ :set keep true }
 
-  :if ($name="cust_JABLAY") do={ :set found true }
+  :if ($name="cust_JABLAY") do={ :set keep true }
 
-  :if ($name="cust_MANG RONI") do={ :set found true }
+  :if ($name="cust_MANG RONI") do={ :set keep true }
 
-  :if ($name="cust_KA MIDAH") do={ :set found true }
+  :if ($name="cust_KA MIDAH") do={ :set keep true }
 
-  :if ($name="cust_RIA") do={ :set found true }
+  :if ($name="cust_RIA") do={ :set keep true }
 
-  :if ($name="cust_DEA") do={ :set found true }
+  :if ($name="cust_DEA") do={ :set keep true }
 
-  :if ($name="cust_GANI") do={ :set found true }
+  :if ($name="cust_GANI") do={ :set keep true }
 
-  :if ($name="cust_GILANG") do={ :set found true }
+  :if ($name="cust_GILANG") do={ :set keep true }
 
-  :if ($name="cust_ZIDAN ") do={ :set found true }
+  :if ($name="cust_ZIDAN ") do={ :set keep true }
 
-  :if ($name="cust_MAS BOY") do={ :set found true }
+  :if ($name="cust_MAS BOY") do={ :set keep true }
 
-  :if ($name="cust_ARIF DARMI") do={ :set found true }
+  :if ($name="cust_ARIF DARMI") do={ :set keep true }
 
-  :if ($name="cust_PAIJO 25") do={ :set found true }
+  :if ($name="cust_PAIJO 25") do={ :set keep true }
 
-  :if ($name="cust_DIDIT") do={ :set found true }
+  :if ($name="cust_DIDIT") do={ :set keep true }
 
-  :if ($name="cust_TELE") do={ :set found true }
+  :if ($name="cust_TELE") do={ :set keep true }
 
-  :if ($name="cust_KONTR ACUY") do={ :set found true }
+  :if ($name="cust_KONTR ACUY") do={ :set keep true }
 
-  :if ($name="cust_KA HANI") do={ :set found true }
+  :if ($name="cust_KA HANI") do={ :set keep true }
 
-  :if ($name="cust_MAMA RIZKI") do={ :set found true }
+  :if ($name="cust_MAMA RIZKI") do={ :set keep true }
 
-  :if ($name="cust_KOS PUTRI 1") do={ :set found true }
+  :if ($name="cust_KOS PUTRI 1") do={ :set keep true }
 
-  :if ($name="cust_KOS PUTRI 2") do={ :set found true }
+  :if ($name="cust_KOS PUTRI 2") do={ :set keep true }
 
-  :if ($name="cust_DIKI") do={ :set found true }
+  :if ($name="cust_DIKI") do={ :set keep true }
 
-  :if ($name="cust_POS/SUKIR") do={ :set found true }
+  :if ($name="cust_POS/SUKIR") do={ :set keep true }
 
-  :if ($name="cust_ARJUNA RUMAH") do={ :set found true }
+  :if ($name="cust_ARJUNA RUMAH") do={ :set keep true }
 
-  :if ($name="cust_SAFRAN") do={ :set found true }
+  :if ($name="cust_SAFRAN") do={ :set keep true }
 
-  :if ($name="cust_ALDA") do={ :set found true }
+  :if ($name="cust_ALDA") do={ :set keep true }
 
-  :if ($name="cust_KA NUR ECE") do={ :set found true }
+  :if ($name="cust_KA NUR ECE") do={ :set keep true }
 
-  :if ($name="cust_RABBEL") do={ :set found true }
+  :if ($name="cust_RABBEL") do={ :set keep true }
 
-  :if ($name="cust_WAHYUNI") do={ :set found true }
+  :if ($name="cust_WAHYUNI") do={ :set keep true }
 
-  :if ($name="cust_PIPIT") do={ :set found true }
+  :if ($name="cust_PIPIT") do={ :set keep true }
 
-  :if ($name="cust_AMI") do={ :set found true }
+  :if ($name="cust_AMI") do={ :set keep true }
 
-  :if ($name="cust_RISNA") do={ :set found true }
+  :if ($name="cust_RISNA") do={ :set keep true }
 
-  :if ($name="cust_NADYA") do={ :set found true }
+  :if ($name="cust_NADYA") do={ :set keep true }
 
-  :if ($name="cust_STIK") do={ :set found true }
+  :if ($name="cust_STIK") do={ :set keep true }
 
-  :if ($name="cust_MANG SURI") do={ :set found true }
+  :if ($name="cust_MANG SURI") do={ :set keep true }
 
-  :if ($name="cust_MANG ALI") do={ :set found true }
+  :if ($name="cust_MANG ALI") do={ :set keep true }
 
-  :if ([:len $found] = 0) do={
+  :if ($keep = false) do={
     /queue simple remove $i
   }
 }
