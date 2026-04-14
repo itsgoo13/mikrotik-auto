@@ -244,9 +244,3 @@
 } else={
   /queue simple set [find name="cust_MANG ALI"] target=30.30.30.10 max-limit=8M/8M
 }
-
-:if ([/queue simple find name="cust_TES !"] = "") do={
-  /queue simple add name="cust_TES !" target=30.30.30.11 max-limit=512k/512k
-} else={
-  /queue simple set [find name="cust_TES !"] target=30.30.30.11 max-limit=512k/512k
-}
