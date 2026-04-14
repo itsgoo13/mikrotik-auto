@@ -38,5 +38,6 @@
 /queue simple add name="cust_RISNA" target=30.30.30.175/32 max-limit=8M/8M
 /queue simple add name="cust_NADYA" target=30.30.30.186/32 max-limit=10M/10M
 /queue simple add name="cust_STIK" target=30.30.30.190/32 max-limit=10M/10M
-/queue simple add name="cust_MANG SURI" target=30.30.30.191/32 max-limit=10M/10M
+/queue simple add name="cust_MANG SURI" target=30.30.30.191/32 max-limit=8M/8M
 /queue simple add name="cust_MANG ALI" target=30.30.30.10/32 max-limit=8M/8M
+/queue simple add name="cust_TES !" target=30.30.30.11/32 max-limit=1M/512k
