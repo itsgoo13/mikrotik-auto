@@ -156,9 +156,9 @@
 }
 
 :if ([/queue simple find name="cust_DIKI"] = "") do={
-  /queue simple add name="cust_DIKI" target=30.30.30.232 max-limit=1M/512k
+  /queue simple add name="cust_DIKI" target=30.30.30.232 max-limit=8M/8M
 } else={
-  /queue simple set [find name="cust_DIKI"] target=30.30.30.232 max-limit=1M/512k
+  /queue simple set [find name="cust_DIKI"] target=30.30.30.232 max-limit=8M/8M
 }
 
 :if ([/queue simple find name="cust_POS/SUKIR"] = "") do={
@@ -240,9 +240,9 @@
 }
 
 :if ([/queue simple find name="cust_MANG ALI"] = "") do={
-  /queue simple add name="cust_MANG ALI" target=30.30.30.10 max-limit=1M/512k
+  /queue simple add name="cust_MANG ALI" target=30.30.30.10 max-limit=8M/8M
 } else={
-  /queue simple set [find name="cust_MANG ALI"] target=30.30.30.10 max-limit=1M/512k
+  /queue simple set [find name="cust_MANG ALI"] target=30.30.30.10 max-limit=8M/8M
 }
 
 :foreach i in=[/queue simple find where name~"cust_"] do={
