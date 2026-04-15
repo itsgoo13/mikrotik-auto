@@ -331,7 +331,5 @@
 
   :if ($name="cust_MANG ALI") do={ :set keep true }
 
-  :if ($keep = false) do={
-    /queue simple remove $i
-  }
+  :if ($keep = false) do={ /queue simple remove $i }
 }
