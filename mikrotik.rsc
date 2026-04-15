@@ -240,9 +240,9 @@
 }
 
 :if ([/queue simple find name="cust_MANG ALI"] = "") do={
-  /queue simple add name="cust_MANG ALI" target=30.30.30.10 max-limit=8M/8M
+  /queue simple add name="cust_MANG ALI" target=30.30.30.10 max-limit=1M/512k
 } else={
-  /queue simple set [find name="cust_MANG ALI"] target=30.30.30.10 max-limit=8M/8M
+  /queue simple set [find name="cust_MANG ALI"] target=30.30.30.10 max-limit=1M/512k
 }
 
 :foreach i in=[/queue simple find where name~"cust_"] do={
