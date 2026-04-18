@@ -130,9 +130,9 @@
   /queue simple set [find name="cust_KOS_PUTRI_2"] target=30.30.30.231 max-limit=5M/10M
 }
 :if ([/queue simple find name="cust_DIKI"] = "") do={
-  /queue simple add name="cust_DIKI" target=30.30.30.232 max-limit=8M/8M
+  /queue simple add name="cust_DIKI" target=30.30.30.232 max-limit=1M/512k
 } else={
-  /queue simple set [find name="cust_DIKI"] target=30.30.30.232 max-limit=8M/8M
+  /queue simple set [find name="cust_DIKI"] target=30.30.30.232 max-limit=1M/512k
 }
 :if ([/queue simple find name="cust_POS/SUKIR"] = "") do={
   /queue simple add name="cust_POS/SUKIR" target=30.30.30.252 max-limit=3M/3M
