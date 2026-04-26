@@ -75,9 +75,9 @@
   /queue simple set [find name="cust_GILANG"] target=30.30.30.119 max-limit=10M/10M
 }
 :if ([/queue simple find name="cust_ZIDAN_"] = "") do={
-  /queue simple add name="cust_ZIDAN_" target=30.30.30.200 max-limit=20M/20M
+  /queue simple add name="cust_ZIDAN_" target=30.30.30.200 max-limit=10M/10M
 } else={
-  /queue simple set [find name="cust_ZIDAN_"] target=30.30.30.200 max-limit=20M/20M
+  /queue simple set [find name="cust_ZIDAN_"] target=30.30.30.200 max-limit=10M/10M
 }
 :if ([/queue simple find name="cust_MAS_BOY"] = "") do={
   /queue simple add name="cust_MAS_BOY" target=30.30.30.202 max-limit=3M/3M
