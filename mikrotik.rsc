@@ -1,9 +1,4 @@
 
-:if ([/queue simple find name="cust_PELANGGAN"] = "") do={
-  /queue simple add name="cust_PELANGGAN" target=IP max-limit=PAKET
-} else={
-  /queue simple set [find name="cust_PELANGGAN"] target=IP max-limit=PAKET
-}
 :if ([/queue simple find name="cust_ACUY"] = "") do={
   /queue simple add name="cust_ACUY" target=30.30.30.108 max-limit=8M/8M
 } else={
@@ -214,7 +209,6 @@
   :local name [/queue simple get $i name];
   :local keep false;
 
-  :if ($name="cust_PELANGGAN") do={ :set keep true }
   :if ($name="cust_ACUY") do={ :set keep true }
   :if ($name="cust_ALDA") do={ :set keep true }
   :if ($name="cust_ALFA") do={ :set keep true }
@@ -262,4 +256,4 @@
   }
 }
 
-:log info "Auto Sync Complete - 42 customers synced"
+:log info "Auto Sync Complete - 41 customers synced"
