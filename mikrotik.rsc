@@ -4,9 +4,9 @@
   /queue simple set [find name="cust_ACUY"] target=30.30.30.108 max-limit=8M/8M
 }
 :if ([/queue simple find name="cust_ALDA"] = "") do={
-  /queue simple add name="cust_ALDA" target=30.30.30.159 max-limit=3M/3M
+  /queue simple add name="cust_ALDA" target=30.30.30.159 max-limit=1M/512k
 } else={
-  /queue simple set [find name="cust_ALDA"] target=30.30.30.159 max-limit=3M/3M
+  /queue simple set [find name="cust_ALDA"] target=30.30.30.159 max-limit=1M/512k
 }
 :if ([/queue simple find name="cust_ALFA"] = "") do={
   /queue simple add name="cust_ALFA" target=30.30.30.110 max-limit=20M/20M
@@ -54,9 +54,9 @@
   /queue simple set [find name="cust_DIKI"] target=30.30.30.232 max-limit=3M/3M
 }
 :if ([/queue simple find name="cust_DINI"] = "") do={
-  /queue simple add name="cust_DINI" target=30.30.30.170 max-limit=20M/20M
+  /queue simple add name="cust_DINI" target=30.30.30.170 max-limit=1M/512k
 } else={
-  /queue simple set [find name="cust_DINI"] target=30.30.30.170 max-limit=20M/20M
+  /queue simple set [find name="cust_DINI"] target=30.30.30.170 max-limit=1M/512k
 }
 :if ([/queue simple find name="cust_FAJAR_"] = "") do={
   /queue simple add name="cust_FAJAR_" target=30.30.30.111 max-limit=10M/10M
@@ -69,9 +69,9 @@
   /queue simple set [find name="cust_GANI"] target=30.30.30.118 max-limit=20M/20M
 }
 :if ([/queue simple find name="cust_GILANG"] = "") do={
-  /queue simple add name="cust_GILANG" target=30.30.30.119 max-limit=10M/10M
+  /queue simple add name="cust_GILANG" target=30.30.30.119 max-limit=1M/512k
 } else={
-  /queue simple set [find name="cust_GILANG"] target=30.30.30.119 max-limit=10M/10M
+  /queue simple set [find name="cust_GILANG"] target=30.30.30.119 max-limit=1M/512k
 }
 :if ([/queue simple find name="cust_JABLAY"] = "") do={
   /queue simple add name="cust_JABLAY" target=30.30.30.120 max-limit=10M/10M
@@ -84,9 +84,9 @@
   /queue simple set [find name="cust_JIMI"] target=30.30.30.107 max-limit=2M/2M
 }
 :if ([/queue simple find name="cust_KA_HANI"] = "") do={
-  /queue simple add name="cust_KA_HANI" target=30.30.30.251 max-limit=8M/8M
+  /queue simple add name="cust_KA_HANI" target=30.30.30.251 max-limit=1M/512k
 } else={
-  /queue simple set [find name="cust_KA_HANI"] target=30.30.30.251 max-limit=8M/8M
+  /queue simple set [find name="cust_KA_HANI"] target=30.30.30.251 max-limit=1M/512k
 }
 :if ([/queue simple find name="cust_KA_MIDAH"] = "") do={
   /queue simple add name="cust_KA_MIDAH" target=30.30.30.101 max-limit=10M/10M
@@ -119,9 +119,9 @@
   /queue simple set [find name="cust_KOS_PUTRI_2"] target=30.30.30.231 max-limit=5M/10M
 }
 :if ([/queue simple find name="cust_MAMA_RIZKI"] = "") do={
-  /queue simple add name="cust_MAMA_RIZKI" target=30.30.30.222 max-limit=3M/3M
+  /queue simple add name="cust_MAMA_RIZKI" target=30.30.30.222 max-limit=1M/512k
 } else={
-  /queue simple set [find name="cust_MAMA_RIZKI"] target=30.30.30.222 max-limit=3M/3M
+  /queue simple set [find name="cust_MAMA_RIZKI"] target=30.30.30.222 max-limit=1M/512k
 }
 :if ([/queue simple find name="cust_MANG_ALI"] = "") do={
   /queue simple add name="cust_MANG_ALI" target=30.30.30.10 max-limit=8M/8M
@@ -139,9 +139,9 @@
   /queue simple set [find name="cust_MANG_SURI"] target=30.30.30.191 max-limit=8M/8M
 }
 :if ([/queue simple find name="cust_MAS_BOY"] = "") do={
-  /queue simple add name="cust_MAS_BOY" target=30.30.30.202 max-limit=3M/3M
+  /queue simple add name="cust_MAS_BOY" target=30.30.30.202 max-limit=1M/512k
 } else={
-  /queue simple set [find name="cust_MAS_BOY"] target=30.30.30.202 max-limit=3M/3M
+  /queue simple set [find name="cust_MAS_BOY"] target=30.30.30.202 max-limit=1M/512k
 }
 :if ([/queue simple find name="cust_NADYA"] = "") do={
   /queue simple add name="cust_NADYA" target=30.30.30.186 max-limit=10M/10M
@@ -149,9 +149,9 @@
   /queue simple set [find name="cust_NADYA"] target=30.30.30.186 max-limit=10M/10M
 }
 :if ([/queue simple find name="cust_PAIJO_25"] = "") do={
-  /queue simple add name="cust_PAIJO_25" target=30.30.30.158 max-limit=3M/3M
+  /queue simple add name="cust_PAIJO_25" target=30.30.30.158 max-limit=1M/512k
 } else={
-  /queue simple set [find name="cust_PAIJO_25"] target=30.30.30.158 max-limit=3M/3M
+  /queue simple set [find name="cust_PAIJO_25"] target=30.30.30.158 max-limit=1M/512k
 }
 :if ([/queue simple find name="cust_PIPIT"] = "") do={
   /queue simple add name="cust_PIPIT" target=30.30.30.183 max-limit=8M/8M
@@ -159,9 +159,9 @@
   /queue simple set [find name="cust_PIPIT"] target=30.30.30.183 max-limit=8M/8M
 }
 :if ([/queue simple find name="cust_POS/SUKIR"] = "") do={
-  /queue simple add name="cust_POS/SUKIR" target=30.30.30.252 max-limit=3M/3M
+  /queue simple add name="cust_POS/SUKIR" target=30.30.30.252 max-limit=1M/512k
 } else={
-  /queue simple set [find name="cust_POS/SUKIR"] target=30.30.30.252 max-limit=3M/3M
+  /queue simple set [find name="cust_POS/SUKIR"] target=30.30.30.252 max-limit=1M/512k
 }
 :if ([/queue simple find name="cust_RABBEL"] = "") do={
   /queue simple add name="cust_RABBEL" target=30.30.30.151 max-limit=8M/8M
@@ -179,24 +179,24 @@
   /queue simple set [find name="cust_RISNA"] target=30.30.30.175 max-limit=8M/8M
 }
 :if ([/queue simple find name="cust_SAFRAN"] = "") do={
-  /queue simple add name="cust_SAFRAN" target=30.30.30.137 max-limit=3M/3M
+  /queue simple add name="cust_SAFRAN" target=30.30.30.137 max-limit=1M/512k
 } else={
-  /queue simple set [find name="cust_SAFRAN"] target=30.30.30.137 max-limit=3M/3M
+  /queue simple set [find name="cust_SAFRAN"] target=30.30.30.137 max-limit=1M/512k
 }
 :if ([/queue simple find name="cust_STIK"] = "") do={
-  /queue simple add name="cust_STIK" target=30.30.30.190 max-limit=10M/10M
+  /queue simple add name="cust_STIK" target=30.30.30.190 max-limit=1M/512k
 } else={
-  /queue simple set [find name="cust_STIK"] target=30.30.30.190 max-limit=10M/10M
+  /queue simple set [find name="cust_STIK"] target=30.30.30.190 max-limit=1M/512k
 }
 :if ([/queue simple find name="cust_TELE"] = "") do={
-  /queue simple add name="cust_TELE" target=30.30.30.211 max-limit=3M/3M
+  /queue simple add name="cust_TELE" target=30.30.30.211 max-limit=1M/512k
 } else={
-  /queue simple set [find name="cust_TELE"] target=30.30.30.211 max-limit=3M/3M
+  /queue simple set [find name="cust_TELE"] target=30.30.30.211 max-limit=1M/512k
 }
 :if ([/queue simple find name="cust_WAHYUNI"] = "") do={
-  /queue simple add name="cust_WAHYUNI" target=30.30.30.157 max-limit=3M/3M
+  /queue simple add name="cust_WAHYUNI" target=30.30.30.157 max-limit=1M/512k
 } else={
-  /queue simple set [find name="cust_WAHYUNI"] target=30.30.30.157 max-limit=3M/3M
+  /queue simple set [find name="cust_WAHYUNI"] target=30.30.30.157 max-limit=1M/512k
 }
 :if ([/queue simple find name="cust_ZIDAN_"] = "") do={
   /queue simple add name="cust_ZIDAN_" target=30.30.30.200 max-limit=20M/20M
