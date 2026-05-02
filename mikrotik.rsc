@@ -64,9 +64,9 @@
   /queue simple set [find name="cust_FAJAR_"] target=30.30.30.111 max-limit=10M/10M
 }
 :if ([/queue simple find name="cust_GANI"] = "") do={
-  /queue simple add name="cust_GANI" target=30.30.30.118 max-limit=1M/512k
+  /queue simple add name="cust_GANI" target=30.30.30.118 max-limit=20M/20M
 } else={
-  /queue simple set [find name="cust_GANI"] target=30.30.30.118 max-limit=1M/512k
+  /queue simple set [find name="cust_GANI"] target=30.30.30.118 max-limit=20M/20M
 }
 :if ([/queue simple find name="cust_GILANG"] = "") do={
   /queue simple add name="cust_GILANG" target=30.30.30.119 max-limit=1M/512k
