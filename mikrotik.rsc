@@ -1,4 +1,3 @@
-
 :if ([/queue simple find name="cust_ACUY"] = "") do={
   /queue simple add name="cust_ACUY" target=30.30.30.108 max-limit=8M/8M
 } else={
@@ -204,56 +203,3 @@
 } else={
   /queue simple set [find name="cust_ZIDAN_"] target=30.30.30.200 max-limit=20M/20M
 }
-
-:foreach i in=[/queue simple find where name~"cust_"] do={
-  :local name [/queue simple get $i name];
-  :local keep false;
-
-  :if ($name="cust_ACUY") do={ :set keep true }
-  :if ($name="cust_ALDA") do={ :set keep true }
-  :if ($name="cust_ALFA") do={ :set keep true }
-  :if ($name="cust_AMI") do={ :set keep true }
-  :if ($name="cust_ARIF_DARMI") do={ :set keep true }
-  :if ($name="cust_ARJUNA_RUMAH") do={ :set keep true }
-  :if ($name="cust_AZZAM") do={ :set keep true }
-  :if ($name="cust_CENAY_") do={ :set keep true }
-  :if ($name="cust_DEA") do={ :set keep true }
-  :if ($name="cust_DIDIT") do={ :set keep true }
-  :if ($name="cust_DIKI") do={ :set keep true }
-  :if ($name="cust_DINI") do={ :set keep true }
-  :if ($name="cust_FAJAR_") do={ :set keep true }
-  :if ($name="cust_GANI") do={ :set keep true }
-  :if ($name="cust_GILANG") do={ :set keep true }
-  :if ($name="cust_JABLAY") do={ :set keep true }
-  :if ($name="cust_JIMI") do={ :set keep true }
-  :if ($name="cust_KA_HANI") do={ :set keep true }
-  :if ($name="cust_KA_MIDAH") do={ :set keep true }
-  :if ($name="cust_KA_NUR_ECE") do={ :set keep true }
-  :if ($name="cust_KAMPLENG") do={ :set keep true }
-  :if ($name="cust_KONTR_ACUY") do={ :set keep true }
-  :if ($name="cust_KOS_PUTRI_1") do={ :set keep true }
-  :if ($name="cust_KOS_PUTRI_2") do={ :set keep true }
-  :if ($name="cust_MAMA_RIZKI") do={ :set keep true }
-  :if ($name="cust_MANG_ALI") do={ :set keep true }
-  :if ($name="cust_MANG_RONI") do={ :set keep true }
-  :if ($name="cust_MANG_SURI") do={ :set keep true }
-  :if ($name="cust_MAS_BOY") do={ :set keep true }
-  :if ($name="cust_NADYA") do={ :set keep true }
-  :if ($name="cust_PAIJO_25") do={ :set keep true }
-  :if ($name="cust_PIPIT") do={ :set keep true }
-  :if ($name="cust_POS/SUKIR") do={ :set keep true }
-  :if ($name="cust_RABBEL") do={ :set keep true }
-  :if ($name="cust_RIA") do={ :set keep true }
-  :if ($name="cust_RISNA") do={ :set keep true }
-  :if ($name="cust_SAFRAN") do={ :set keep true }
-  :if ($name="cust_STIK") do={ :set keep true }
-  :if ($name="cust_TELE") do={ :set keep true }
-  :if ($name="cust_WAHYUNI") do={ :set keep true }
-  :if ($name="cust_ZIDAN_") do={ :set keep true }
-  :if ($keep = false) do={ 
-    :log info "Deleting inactive queue: $name";
-    /queue simple remove $i 
-  }
-}
-
-:log info "Auto Sync Complete - 41 customers synced"
