@@ -184,9 +184,9 @@
   /queue simple set [find name="cust_SAFRAN"] target=30.30.30.137 max-limit=1M/512k
 }
 :if ([/queue simple find name="cust_STIK"] = "") do={
-  /queue simple add name="cust_STIK" target=30.30.30.190 max-limit=1M/512k
+  /queue simple add name="cust_STIK" target=30.30.30.190 max-limit=10M/10M
 } else={
-  /queue simple set [find name="cust_STIK"] target=30.30.30.190 max-limit=1M/512k
+  /queue simple set [find name="cust_STIK"] target=30.30.30.190 max-limit=10M/10M
 }
 :if ([/queue simple find name="cust_TELE"] = "") do={
   /queue simple add name="cust_TELE" target=30.30.30.211 max-limit=3M/3M
