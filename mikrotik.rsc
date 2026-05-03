@@ -149,9 +149,9 @@
   /queue simple set [find name="cust_NADYA"] target=30.30.30.186 max-limit=10M/10M
 }
 :if ([/queue simple find name="cust_PAIJO_25"] = "") do={
-  /queue simple add name="cust_PAIJO_25" target=30.30.30.158 max-limit=1M/512k
+  /queue simple add name="cust_PAIJO_25" target=30.30.30.158 max-limit=3M/3M
 } else={
-  /queue simple set [find name="cust_PAIJO_25"] target=30.30.30.158 max-limit=1M/512k
+  /queue simple set [find name="cust_PAIJO_25"] target=30.30.30.158 max-limit=3M/3M
 }
 :if ([/queue simple find name="cust_PIPIT"] = "") do={
   /queue simple add name="cust_PIPIT" target=30.30.30.183 max-limit=8M/8M
