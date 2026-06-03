@@ -158,10 +158,10 @@
 } else={
   /queue simple set [find name="cust_PIPIT"] target=30.30.30.183 max-limit=8M/8M
 }
-:if ([/queue simple find name="cust_POS/SUKIR"] = "") do={
-  /queue simple add name="cust_POS/SUKIR" target=30.30.30.252 max-limit=3M/3M
+:if ([/queue simple find name="cust_POS_SUKIR"] = "") do={
+  /queue simple add name="cust_POS_SUKIR" target=30.30.30.252 max-limit=3M/3M
 } else={
-  /queue simple set [find name="cust_POS/SUKIR"] target=30.30.30.252 max-limit=3M/3M
+  /queue simple set [find name="cust_POS_SUKIR"] target=30.30.30.252 max-limit=3M/3M
 }
 :if ([/queue simple find name="cust_RABBEL"] = "") do={
   /queue simple add name="cust_RABBEL" target=30.30.30.151 max-limit=8M/8M
