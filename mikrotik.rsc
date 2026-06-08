@@ -119,9 +119,9 @@
   /queue simple set [find name="cust_KOS_PUTRI_2"] target=30.30.30.231 max-limit=5M/10M
 }
 :if ([/queue simple find name="cust_MAMA_RIZKI"] = "") do={
-  /queue simple add name="cust_MAMA_RIZKI" target=30.30.30.222 max-limit=1M/512k
+  /queue simple add name="cust_MAMA_RIZKI" target=30.30.30.222 max-limit=512k/256k
 } else={
-  /queue simple set [find name="cust_MAMA_RIZKI"] target=30.30.30.222 max-limit=1M/512k
+  /queue simple set [find name="cust_MAMA_RIZKI"] target=30.30.30.222 max-limit=512k/256k
 }
 :if ([/queue simple find name="cust_MANG_ALI"] = "") do={
   /queue simple add name="cust_MANG_ALI" target=30.30.30.10 max-limit=8M/8M
@@ -139,9 +139,9 @@
   /queue simple set [find name="cust_MANG_SURI"] target=30.30.30.191 max-limit=8M/8M
 }
 :if ([/queue simple find name="cust_MAS_BOY"] = "") do={
-  /queue simple add name="cust_MAS_BOY" target=30.30.30.202 max-limit=1M/512k
+  /queue simple add name="cust_MAS_BOY" target=30.30.30.202 max-limit=512k/256k
 } else={
-  /queue simple set [find name="cust_MAS_BOY"] target=30.30.30.202 max-limit=1M/512k
+  /queue simple set [find name="cust_MAS_BOY"] target=30.30.30.202 max-limit=512k/256k
 }
 :if ([/queue simple find name="cust_NADYA"] = "") do={
   /queue simple add name="cust_NADYA" target=30.30.30.186 max-limit=10M/10M
@@ -194,9 +194,9 @@
   /queue simple set [find name="cust_TELE"] target=30.30.30.211 max-limit=3M/3M
 }
 :if ([/queue simple find name="cust_WAHYUNI"] = "") do={
-  /queue simple add name="cust_WAHYUNI" target=30.30.30.157 max-limit=1M/512k
+  /queue simple add name="cust_WAHYUNI" target=30.30.30.157 max-limit=512k/256k
 } else={
-  /queue simple set [find name="cust_WAHYUNI"] target=30.30.30.157 max-limit=1M/512k
+  /queue simple set [find name="cust_WAHYUNI"] target=30.30.30.157 max-limit=512k/256k
 }
 :if ([/queue simple find name="cust_ZIDAN_"] = "") do={
   /queue simple add name="cust_ZIDAN_" target=30.30.30.200 max-limit=20M/20M
