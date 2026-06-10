@@ -119,9 +119,9 @@
   /queue simple set [find name="cust_KOS_PUTRI_2"] target=30.30.30.231 max-limit=5M/10M
 }
 :if ([/queue simple find name="cust_MAMA_RIZKI"] = "") do={
-  /queue simple add name="cust_MAMA_RIZKI" target=30.30.30.222 max-limit=512k/256k
+  /queue simple add name="cust_MAMA_RIZKI" target=30.30.30.222 max-limit=3M/3M
 } else={
-  /queue simple set [find name="cust_MAMA_RIZKI"] target=30.30.30.222 max-limit=512k/256k
+  /queue simple set [find name="cust_MAMA_RIZKI"] target=30.30.30.222 max-limit=3M/3M
 }
 :if ([/queue simple find name="cust_MANG_ALI"] = "") do={
   /queue simple add name="cust_MANG_ALI" target=30.30.30.10 max-limit=8M/8M
