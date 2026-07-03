@@ -24,9 +24,9 @@
   /queue simple set [find name="cust_ARIF_DARMI"] target=30.30.30.207 max-limit=2M/2M
 }
 :if ([/queue simple find name="cust_ARJUNA_RUMAH"] = "") do={
-  /queue simple add name="cust_ARJUNA_RUMAH" target=30.30.30.150 max-limit=1M/512k
+  /queue simple add name="cust_ARJUNA_RUMAH" target=30.30.30.150 max-limit=8M/8M
 } else={
-  /queue simple set [find name="cust_ARJUNA_RUMAH"] target=30.30.30.150 max-limit=1M/512k
+  /queue simple set [find name="cust_ARJUNA_RUMAH"] target=30.30.30.150 max-limit=8M/8M
 }
 :if ([/queue simple find name="cust_AZZAM"] = "") do={
   /queue simple add name="cust_AZZAM" target=30.30.30.172 max-limit=20M/20M
@@ -54,9 +54,9 @@
   /queue simple set [find name="cust_DIKI"] target=30.30.30.232 max-limit=3M/3M
 }
 :if ([/queue simple find name="cust_DINI"] = "") do={
-  /queue simple add name="cust_DINI" target=30.30.30.170 max-limit=1M/512k
+  /queue simple add name="cust_DINI" target=30.30.30.170 max-limit=20M/20M
 } else={
-  /queue simple set [find name="cust_DINI"] target=30.30.30.170 max-limit=1M/512k
+  /queue simple set [find name="cust_DINI"] target=30.30.30.170 max-limit=20M/20M
 }
 :if ([/queue simple find name="cust_FAJAR_"] = "") do={
   /queue simple add name="cust_FAJAR_" target=30.30.30.111 max-limit=10M/10M
