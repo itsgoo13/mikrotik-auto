@@ -4,9 +4,9 @@
   /queue simple set [find name="cust_ACUY"] target=30.30.30.108 max-limit=8M/8M
 }
 :if ([/queue simple find name="cust_ALDA"] = "") do={
-  /queue simple add name="cust_ALDA" target=30.30.30.159 max-limit=64k/64k
+  /queue simple add name="cust_ALDA" target=30.30.30.159 max-limit=3M/3M
 } else={
-  /queue simple set [find name="cust_ALDA"] target=30.30.30.159 max-limit=64k/64k
+  /queue simple set [find name="cust_ALDA"] target=30.30.30.159 max-limit=3M/3M
 }
 :if ([/queue simple find name="cust_ALFA"] = "") do={
   /queue simple add name="cust_ALFA" target=30.30.30.110 max-limit=20M/20M
