@@ -203,3 +203,8 @@
 } else={
   /queue simple set [find name="cust_ZIDAN_"] target=30.30.30.200 max-limit=20M/20M
 }
+:if ([/queue simple find name="cust_KENZO"] = "") do={
+  /queue simple add name="cust_KENZO" target=30.30.30.105 max-limit=3M/3M
+} else={
+  /queue simple set [find name="cust_KENZO"] target=30.30.30.105 max-limit=3M/3M
+}
