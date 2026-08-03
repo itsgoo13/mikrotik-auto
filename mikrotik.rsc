@@ -39,9 +39,9 @@
   /queue simple set [find name="cust_CENAY_"] target=30.30.30.112 max-limit=3M/3M
 }
 :if ([:len [/queue simple find name="cust_DEA"]] = 0) do={
-  /queue simple add name="cust_DEA" target=30.30.30.242 max-limit=1M/512k
+  /queue simple add name="cust_DEA" target=30.30.30.242 max-limit=20M/20M
 } else={
-  /queue simple set [find name="cust_DEA"] target=30.30.30.242 max-limit=1M/512k
+  /queue simple set [find name="cust_DEA"] target=30.30.30.242 max-limit=20M/20M
 }
 :if ([:len [/queue simple find name="cust_DIDIT"]] = 0) do={
   /queue simple add name="cust_DIDIT" target=30.30.30.122 max-limit=1M/512k
