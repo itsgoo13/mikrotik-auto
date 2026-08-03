@@ -179,9 +179,9 @@
   /queue simple set [find name="cust_RISNA"] target=30.30.30.175 max-limit=8M/8M
 }
 :if ([:len [/queue simple find name="cust_SAFRAN"]] = 0) do={
-  /queue simple add name="cust_SAFRAN" target=30.30.30.137 max-limit=64k/64k
+  /queue simple add name="cust_SAFRAN" target=30.30.30.137 max-limit=3M/3M
 } else={
-  /queue simple set [find name="cust_SAFRAN"] target=30.30.30.137 max-limit=64k/64k
+  /queue simple set [find name="cust_SAFRAN"] target=30.30.30.137 max-limit=3M/3M
 }
 :if ([:len [/queue simple find name="cust_STIK"]] = 0) do={
   /queue simple add name="cust_STIK" target=30.30.30.190 max-limit=20M/20M
