@@ -84,9 +84,9 @@
   /queue simple set [find name="cust_JIMI"] target=30.30.30.107 max-limit=2M/2M
 }
 :if ([:len [/queue simple find name="cust_KA_HANI"]] = 0) do={
-  /queue simple add name="cust_KA_HANI" target=30.30.30.251 max-limit=1M/512k
+  /queue simple add name="cust_KA_HANI" target=30.30.30.251 max-limit=8M/8M
 } else={
-  /queue simple set [find name="cust_KA_HANI"] target=30.30.30.251 max-limit=1M/512k
+  /queue simple set [find name="cust_KA_HANI"] target=30.30.30.251 max-limit=8M/8M
 }
 :if ([:len [/queue simple find name="cust_KA_MIDAH"]] = 0) do={
   /queue simple add name="cust_KA_MIDAH" target=30.30.30.101 max-limit=1M/512k
