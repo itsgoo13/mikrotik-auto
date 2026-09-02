@@ -159,9 +159,9 @@
   /queue simple set [find name="cust_PIPIT"] target=30.30.30.183 max-limit=8M/8M
 }
 :if ([:len [/queue simple find name="cust_POS_SUKIR"]] = 0) do={
-  /queue simple add name="cust_POS_SUKIR" target=30.30.30.252 max-limit=1M/512k
+  /queue simple add name="cust_POS_SUKIR" target=30.30.30.252 max-limit=64k/64k
 } else={
-  /queue simple set [find name="cust_POS_SUKIR"] target=30.30.30.252 max-limit=1M/512k
+  /queue simple set [find name="cust_POS_SUKIR"] target=30.30.30.252 max-limit=64k/64k
 }
 :if ([:len [/queue simple find name="cust_RABBEL"]] = 0) do={
   /queue simple add name="cust_RABBEL" target=30.30.30.151 max-limit=8M/8M
