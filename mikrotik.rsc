@@ -109,14 +109,14 @@
   /queue simple set [find name="cust_KONTR_ACUY"] target=30.30.30.241 max-limit=64k/64k
 }
 :if ([:len [/queue simple find name="cust_KOS_PUTRI_1"]] = 0) do={
-  /queue simple add name="cust_KOS_PUTRI_1" target=30.30.30.230 max-limit=64k/64k
+  /queue simple add name="cust_KOS_PUTRI_1" target=30.30.30.230 max-limit=5M/10M
 } else={
-  /queue simple set [find name="cust_KOS_PUTRI_1"] target=30.30.30.230 max-limit=64k/64k
+  /queue simple set [find name="cust_KOS_PUTRI_1"] target=30.30.30.230 max-limit=5M/10M
 }
 :if ([:len [/queue simple find name="cust_KOS_PUTRI_2"]] = 0) do={
-  /queue simple add name="cust_KOS_PUTRI_2" target=30.30.30.231 max-limit=64k/64k
+  /queue simple add name="cust_KOS_PUTRI_2" target=30.30.30.231 max-limit=5M/10M
 } else={
-  /queue simple set [find name="cust_KOS_PUTRI_2"] target=30.30.30.231 max-limit=64k/64k
+  /queue simple set [find name="cust_KOS_PUTRI_2"] target=30.30.30.231 max-limit=5M/10M
 }
 :if ([:len [/queue simple find name="cust_MAMA_RIZKI"]] = 0) do={
   /queue simple add name="cust_MAMA_RIZKI" target=30.30.30.222 max-limit=3M/3M
