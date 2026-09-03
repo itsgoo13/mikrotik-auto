@@ -54,9 +54,9 @@
   /queue simple set [find name="cust_DIKI"] target=30.30.30.232 max-limit=3M/3M
 }
 :if ([:len [/queue simple find name="cust_DINI"]] = 0) do={
-  /queue simple add name="cust_DINI" target=30.30.30.170 max-limit=1M/512k
+  /queue simple add name="cust_DINI" target=30.30.30.170 max-limit=20M/20M
 } else={
-  /queue simple set [find name="cust_DINI"] target=30.30.30.170 max-limit=1M/512k
+  /queue simple set [find name="cust_DINI"] target=30.30.30.170 max-limit=20M/20M
 }
 :if ([:len [/queue simple find name="cust_FAJAR_"]] = 0) do={
   /queue simple add name="cust_FAJAR_" target=30.30.30.111 max-limit=10M/10M
