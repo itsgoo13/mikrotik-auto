@@ -204,7 +204,7 @@
   /queue simple set [find name="cust_ZIDAN_"] target=30.30.30.200 max-limit=20M/20M
 }
 :if ([:len [/queue simple find name="cust_KENZO"]] = 0) do={
-  /queue simple add name="cust_KENZO" target=30.30.30.105 max-limit=1M/512k
+  /queue simple add name="cust_KENZO" target=30.30.30.105 max-limit=64k/64k
 } else={
-  /queue simple set [find name="cust_KENZO"] target=30.30.30.105 max-limit=1M/512k
+  /queue simple set [find name="cust_KENZO"] target=30.30.30.105 max-limit=64k/64k
 }
