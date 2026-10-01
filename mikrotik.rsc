@@ -139,9 +139,9 @@
   /queue simple set [find name="cust_MANG_SURI"] target=30.30.30.191 max-limit=8M/8M
 }
 :if ([:len [/queue simple find name="cust_MAS_BOY"]] = 0) do={
-  /queue simple add name="cust_MAS_BOY" target=30.30.30.202 max-limit=64k/64k
+  /queue simple add name="cust_MAS_BOY" target=30.30.30.202 max-limit=3M/3M
 } else={
-  /queue simple set [find name="cust_MAS_BOY"] target=30.30.30.202 max-limit=64k/64k
+  /queue simple set [find name="cust_MAS_BOY"] target=30.30.30.202 max-limit=3M/3M
 }
 :if ([:len [/queue simple find name="cust_NADYA"]] = 0) do={
   /queue simple add name="cust_NADYA" target=30.30.30.186 max-limit=10M/10M
@@ -204,7 +204,7 @@
   /queue simple set [find name="cust_ZIDAN_"] target=30.30.30.200 max-limit=20M/20M
 }
 :if ([:len [/queue simple find name="cust_KENZO"]] = 0) do={
-  /queue simple add name="cust_KENZO" target=30.30.30.105 max-limit=64k/64k
+  /queue simple add name="cust_KENZO" target=30.30.30.105 max-limit=3M/3M
 } else={
-  /queue simple set [find name="cust_KENZO"] target=30.30.30.105 max-limit=64k/64k
+  /queue simple set [find name="cust_KENZO"] target=30.30.30.105 max-limit=3M/3M
 }
