@@ -1,7 +1,7 @@
 :if ([:len [/queue simple find name="cust_ACUY"]] = 0) do={
-  /queue simple add name="cust_ACUY" target=30.30.30.108 max-limit=1M/512k
+  /queue simple add name="cust_ACUY" target=30.30.30.108 max-limit=8M/8M
 } else={
-  /queue simple set [find name="cust_ACUY"] target=30.30.30.108 max-limit=1M/512k
+  /queue simple set [find name="cust_ACUY"] target=30.30.30.108 max-limit=8M/8M
 }
 :if ([:len [/queue simple find name="cust_ALDA"]] = 0) do={
   /queue simple add name="cust_ALDA" target=30.30.30.159 max-limit=1M/512k
@@ -199,7 +199,7 @@
   /queue simple set [find name="cust_WAHYUNI"] target=30.30.30.157 max-limit=1M/512k
 }
 :if ([:len [/queue simple find name="cust_ZIDAN_"]] = 0) do={
-  /queue simple add name="cust_ZIDAN_" target=30.30.30.200 max-limit=1M/512k
+  /queue simple add name="cust_ZIDAN_" target=30.30.30.200 max-limit=20M/20M
 } else={
-  /queue simple set [find name="cust_ZIDAN_"] target=30.30.30.200 max-limit=1M/512k
+  /queue simple set [find name="cust_ZIDAN_"] target=30.30.30.200 max-limit=20M/20M
 }
