@@ -9,14 +9,14 @@
   /queue simple set [find name="cust_ALFA"] target=30.30.30.110 max-limit=20M/20M
 }
 :if ([:len [/queue simple find name="cust_AMI"]] = 0) do={
-  /queue simple add name="cust_AMI" target=30.30.30.185 max-limit=8M/8M
+  /queue simple add name="cust_AMI" target=30.30.30.185 max-limit=10M/10M
 } else={
-  /queue simple set [find name="cust_AMI"] target=30.30.30.185 max-limit=8M/8M
+  /queue simple set [find name="cust_AMI"] target=30.30.30.185 max-limit=10M/10M
 }
 :if ([:len [/queue simple find name="cust_ARIF_DARMI"]] = 0) do={
-  /queue simple add name="cust_ARIF_DARMI" target=30.30.30.207 max-limit=2M/2M
+  /queue simple add name="cust_ARIF_DARMI" target=30.30.30.207 max-limit=3M/3M
 } else={
-  /queue simple set [find name="cust_ARIF_DARMI"] target=30.30.30.207 max-limit=2M/2M
+  /queue simple set [find name="cust_ARIF_DARMI"] target=30.30.30.207 max-limit=3M/3M
 }
 :if ([:len [/queue simple find name="cust_ARJUNA_RUMAH"]] = 0) do={
   /queue simple add name="cust_ARJUNA_RUMAH" target=30.30.30.150 max-limit=8M/8M
@@ -79,9 +79,9 @@
   /queue simple set [find name="cust_JIMI"] target=30.30.30.107 max-limit=2M/2M
 }
 :if ([:len [/queue simple find name="cust_KA_HANI"]] = 0) do={
-  /queue simple add name="cust_KA_HANI" target=30.30.30.251 max-limit=8M/8M
+  /queue simple add name="cust_KA_HANI" target=30.30.30.251 max-limit=10M/10M
 } else={
-  /queue simple set [find name="cust_KA_HANI"] target=30.30.30.251 max-limit=8M/8M
+  /queue simple set [find name="cust_KA_HANI"] target=30.30.30.251 max-limit=10M/10M
 }
 :if ([:len [/queue simple find name="cust_KA_MIDAH"]] = 0) do={
   /queue simple add name="cust_KA_MIDAH" target=30.30.30.101 max-limit=10M/10M
@@ -99,9 +99,9 @@
   /queue simple set [find name="cust_KAMPLENG"] target=30.30.30.180 max-limit=10M/10M
 }
 :if ([:len [/queue simple find name="cust_KONTR_ACUY"]] = 0) do={
-  /queue simple add name="cust_KONTR_ACUY" target=30.30.30.241 max-limit=8M/8M
+  /queue simple add name="cust_KONTR_ACUY" target=30.30.30.241 max-limit=10M/10M
 } else={
-  /queue simple set [find name="cust_KONTR_ACUY"] target=30.30.30.241 max-limit=8M/8M
+  /queue simple set [find name="cust_KONTR_ACUY"] target=30.30.30.241 max-limit=10M/10M
 }
 :if ([:len [/queue simple find name="cust_KOS_PUTRI_1"]] = 0) do={
   /queue simple add name="cust_KOS_PUTRI_1" target=30.30.30.230 max-limit=5M/10M
